@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 14px;
+}
+
+.center-container {
+  margin: 0 auto;
+  margin-top: 100px;
+  width: 65%;
+}
+.center-container .search-block {
+  display: flex;
+  justify-content: space-between;
+}
+.center-container .search-block .search-input {
+  width: 79%;
+  padding: 5px;
+  border: 1px solid gray;
+}
+.center-container .search-block .search-button, .center-container .search-block .create-app-form {
+  padding: 5px;
+  border: 1px solid gray;
+  background-color: rgba(128, 128, 128, 0.363);
+  color: white;
+}
+
+.main-table {
+  margin-top: 30px;
+}
+.main-table table {
+  width: 100%;
+}
+.main-table .close-search-block {
+  padding: 5px;
+  border: 1px solid gray;
+  background-color: rgba(128, 128, 128, 0.363);
+  color: white;
+  margin-left: 2px;
+  margin-top: 10px;
+}
+
+.app-form tr td:not(:last-child) {
+  border: 1px solid black;
+  padding: 3px;
+}
+.app-form tr .change-app-form {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid gray;
+  background-color: rgba(128, 128, 128, 0.363);
+  color: white;
+}
+.app-form tr .table-date {
+  width: 160px;
+}
+.app-form tr .table-number-transporter {
+  width: 110px;
+}
+.app-form tr .table-comments {
+  overflow: hidden;
+  max-width: 70px;
+}
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: rgba(0, 0, 0, 0.363);
+  z-index: 1;
+}
+.modal-container .modal-block {
+  margin-top: 100px;
+  width: 400px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  min-height: 150px;
+}
+.modal-container .modal-block .modal-close {
+  background-color: transparent;
+  border: none;
+  float: right;
+  width: 20px;
+  height: 20px;
+}
+.modal-container .modal-block .modal-close span, .modal-container .modal-block .modal-close span::after {
+  width: 20px;
+  height: 2px;
+  display: block;
+  content: '';
+  background-color: red;
+  transform: rotate(45deg);
+}
+.modal-container .modal-block .modal-close span::after {
+  transform: rotate(90deg);
+}
+.modal-container .modal-block h2 {
+  display: inline-block;
+  font-size: 24px;
+  font-weight: 500;
+  border-bottom: 1px solid gray;
+}
+.modal-container .modal-block .app-form-list {
+  float: left;
+  list-style-type: none;
+  width: 100%;
+}
+.modal-container .modal-block .app-form-list li {
+  margin-top: 10px;
+}
+.modal-container .modal-block .app-form-list li input, .modal-container .modal-block .app-form-list li textarea {
+  border: 1px solid gray;
+  width: 97%;
+  padding: 5px;
+}
+.modal-container .modal-block .save-app-form, .modal-container .modal-block .remove-app-form {
+  margin-top: 10px;
+  padding: 5px;
+  border: 1px solid gray;
+  background-color: rgba(128, 128, 128, 0.363);
+  color: white;
+}
+.modal-container .modal-block .remove-app-form {
+  float: right;
+}
+
+.filter-container {
+  position: fixed;
+  top: 100px;
+  right: 50px;
+  background-color: rgba(128, 128, 128, 0.24);
+  padding: 15px;
+  width: 200px;
+  border: 1px solid gray;
+}
+.filter-container ul {
+  list-style-type: none;
+}
+.filter-container ul li {
+  margin-top: 5px;
+}
+.filter-container ul li input {
+  width: 96%;
+  border: 1px solid gray;
+  padding: 3px;
+}
+.filter-container .filter-button {
+  margin-top: 10px;
+  padding: 5px;
+  border: 1px solid gray;
+  background-color: rgba(128, 128, 128, 0.363);
+  color: white;
+}

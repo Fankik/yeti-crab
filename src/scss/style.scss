@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+}
+
+.center-container{
+    margin: 0 auto;
+    margin-top: 100px;
+    width: 65%;
+    
+    .search-block{
+        display: flex;
+        justify-content: space-between;
+
+        .search-input{
+            width: 79%;
+            padding: 5px;
+            border: 1px solid gray;
+        }
+
+        
+        .search-button, .create-app-form{
+            padding: 5px;
+            border: 1px solid gray;
+            background-color: rgba(128, 128, 128, 0.363);
+            color: rgb(255, 255, 255);
+        }
+
+    }
+}
+
+.main-table{
+    margin-top: 30px;
+
+    table{
+        width: 100%;
+    }
+
+    .close-search-block{
+        padding: 5px;
+        border: 1px solid gray;
+        background-color: rgba(128, 128, 128, 0.363);
+        color: rgb(255, 255, 255);
+        margin-left: 2px;
+        margin-top: 10px;
+    }
+}
+
+
+.app-form{
+   
+    tr{
+        td:not(:last-child){
+            border: 1px solid black;
+            padding: 3px;
+        }
+
+        .change-app-form{
+            width: 100%;
+            padding: 5px;
+            border: 1px solid gray;
+            background-color: rgba(128, 128, 128, 0.363);
+            color: rgb(255, 255, 255);
+        }
+
+        .table-date{
+            width: 160px;
+        }
+
+        .table-number-transporter{
+            width: 110px;
+        }
+
+        .table-comments{
+            overflow: hidden;
+            max-width: 70px;
+        }
+    }
+
+}
+
+.modal-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: rgba(0, 0, 0, 0.363);
+    z-index: 1;
+
+    .modal-block{
+        margin-top: 100px;
+        width: 400px;
+        background-color: white;
+        border-radius: 10px;
+        padding: 20px;
+        min-height: 150px;
+        
+
+        .modal-close{
+            background-color: transparent;
+            border: none;
+            float: right;
+            width: 20px;
+            height: 20px;
+            
+            span, span::after{
+                width: 20px;
+                height: 2px;
+                display: block;
+                content: '';
+                background-color: red;
+                transform: rotate(45deg);
+            }
+
+            span::after{
+                transform: rotate(90deg);
+            }
+        }
+
+        h2{
+            display: inline-block;
+            font-size: 24px;
+            font-weight: 500;
+            border-bottom: 1px solid gray;
+        }
+
+        .app-form-list{
+            float: left;
+            list-style-type: none;
+            width: 100%;
+
+            li{
+                margin-top: 10px;
+                input, textarea{
+                    border: 1px solid gray;
+                    width: 97%;
+                    padding: 5px;
+                }
+
+            }
+            
+        }
+
+        .save-app-form, .remove-app-form{
+            margin-top: 10px;
+            padding: 5px;
+            border: 1px solid gray;
+            background-color: rgba(128, 128, 128, 0.363);
+            color: rgb(255, 255, 255); 
+        }
+
+        .remove-app-form{
+            float: right;
+        }
+    }
+}
+
+.filter-container{
+    position: fixed;
+    top: 100px;
+    right: 50px;
+    background-color: rgba(128, 128, 128, 0.24);
+    padding: 15px;
+    width: 200px;
+    border: 1px solid gray;
+
+    ul{
+        list-style-type: none;
+
+        li{
+            margin-top: 5px;
+
+            input{
+                width: 96%;
+                border: 1px solid gray;
+                padding: 3px;
+            }
+        }
+    }
+
+    .filter-button{
+        margin-top: 10px;
+        padding: 5px;
+        border: 1px solid gray;
+        background-color: rgba(128, 128, 128, 0.363);
+        color: rgb(255, 255, 255); 
+    }
+}
